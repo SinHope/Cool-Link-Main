@@ -6,10 +6,12 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
-import screenshotWhatDoWeSupply from '@/images/screenshots/OurProducts.gif'
+import screenshotYoghurt from '@/images/screenshots/Yoghurt.gif'
+import screenshotIceCream from '@/images/screenshots/Ice-Cream.gif'
+import screenshotMilk from '@/images/screenshots/Milk'
+import screenshotDrinkingWater from '@/images/screenshots/Pure-Drinking-Water.gif'
+import screenshotCheese from '@/images/screenshots/Cheese.gif'
+import screenshotFruitJuice from '@/images/screenshots/Fruit-Juice.gif'
 
 const features = [
   {
@@ -22,7 +24,7 @@ const features = [
       flavor and nutrition, ensuring a delightful blend of smooth texture and rich 
       taste with every spoonful. Ideal for seafarers, our chilled yoghurts make for 
       a nutritious and delicious snack, providing a moment of pure bliss during long voyages.`,
-    image: screenshotWhatDoWeSupply,
+    image: screenshotYoghurt,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -54,10 +56,15 @@ const features = [
   {
     name: 'Ice Cream',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      `Indulge in our premium in-house and select popular brand ice creams, delivered directly to ship vessels or through trusted ship chandlers. Rich, creamy, and made with the finest ingredients, it's the perfect treat for seafarers.`,
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
+      `Delight in the creamy, refreshing taste of our premium ice cream, available in 
+      both our in-house brand and select popular brands, delivered directly to ship vessels 
+      or through our trusted ship chandler partners. Made with the finest ingredients, 
+      our ice cream offers a perfect balance of rich flavor and smooth texture, providing 
+      a delectable treat for seafarers. Ideal for enjoying a moment of indulgence on long voyages, 
+      our ice cream brings a touch of sweetness and joy to life at sea.`,
+    image: screenshotIceCream,
     icon: function InventoryIcon() {
       return (
         <>
