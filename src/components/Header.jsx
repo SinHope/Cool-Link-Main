@@ -82,7 +82,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="top-0 left-0 right-0 z-50 bg-white shadow-md fixed">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
@@ -90,7 +90,7 @@ export function Header() {
               <Logo className="h-24 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6 font-semibold">
-              <NavLink href="#features">Home</NavLink>
+              <NavLink href="#">Home</NavLink>
               <NavLink href="#features">About Us</NavLink>
               <NavLink href="#secondary-features">Services</NavLink>
               <NavLink href="#testimonials">Investor Relations</NavLink>
