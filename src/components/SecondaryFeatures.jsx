@@ -9,14 +9,20 @@ import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import screenshotWhatDoWeSupply from '@/images/screenshots/OurProducts.gif'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Yoghurt',
+    summary: 'Enjoy our creamy, flavorful chilled yoghurts, supplied directly to ship vessels or through trusted ship chandlers.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
+      `Indulge in the creamy, refreshing taste of our chilled yoghurts, specially 
+      supplied to ship vessels or through our trusted ship chandler partners. 
+      Crafted with the finest ingredients, our yoghurts offer a perfect balance of 
+      flavor and nutrition, ensuring a delightful blend of smooth texture and rich 
+      taste with every spoonful. Ideal for seafarers, our chilled yoghurts make for 
+      a nutritious and delicious snack, providing a moment of pure bliss during long voyages.`,
+    image: screenshotWhatDoWeSupply,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -46,7 +52,7 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Ice Cream',
     summary:
       'Never lose track of what’s in stock with accurate inventory tracking.',
     description:
@@ -218,11 +224,13 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            Services & Products
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+          <span className="font-bold text-rose-600">Cool Link (Holdings) Limited</span> is managed by Mr Desmond Tan and Mr Raymond Gay. 
+          They have over 15 years of professional experience in this industry.
+          We believe the foundation of our success lies in a commitment to understanding 
+          and meeting our clients requirements for on-time delivery and value-for-money.
           </p>
         </div>
         <FeaturesMobile />

@@ -92,7 +92,7 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6 font-semibold">
               <NavLink href="#features">Home</NavLink>
               <NavLink href="#features">About Us</NavLink>
-              <NavLink href="#features">Services</NavLink>
+              <NavLink href="#secondary-features">Services</NavLink>
               <NavLink href="#testimonials">Investor Relations</NavLink>
               <NavLink href="#pricing">News</NavLink>
             </div>

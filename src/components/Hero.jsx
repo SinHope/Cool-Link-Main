@@ -30,7 +30,7 @@ export function Hero() {
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
       Trusted by businesses worldwide, we deliver quality and reliability in every product. 
       Discover our range of food and drink solutions designed to meet your specific needs 
-      and enhance your business's success.
+      and enhance your business&rsquo;s success.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">Get Quote</Button>
