@@ -56,7 +56,9 @@ const features = [
   {
     name: 'Ice Cream',
     summary:
-      `Indulge in our premium in-house and select popular brand ice creams, delivered directly to ship vessels or through trusted ship chandlers. Rich, creamy, and made with the finest ingredients, it's the perfect treat for seafarers.`,
+      `Indulge in our premium in-house and select popular brand ice creams, 
+      delivered directly to ship vessels or through trusted ship chandlers. 
+      Rich, creamy, and made with the finest ingredients, it's the perfect treat for seafarers.`,
     description:
       `Delight in the creamy, refreshing taste of our premium ice cream, available in 
       both our in-house brand and select popular brands, delivered directly to ship vessels 
@@ -87,11 +89,18 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Fresh & UHT Milk',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      `Experience the quality of our fresh and UHT milk, delivered directly 
+      to ship vessels or through trusted ship chandlers. 
+      Rich in flavor and nutrients, perfect for a healthy diet on board.`,
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      `Enjoy the pure, refreshing taste of our fresh and UHT milk, available for direct 
+      delivery to ship vessels or through our trusted ship chandler partners. Our fresh milk 
+      is sourced from top-quality dairy farms, ensuring rich flavor and high nutritional value. 
+      For longer shelf life without compromising taste, our UHT milk is the perfect alternative, 
+      offering convenience and durability for seafarers. Whether it's fresh or UHT, our milk provides 
+      the essential nutrients needed to maintain a healthy diet during long voyages.`,
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
