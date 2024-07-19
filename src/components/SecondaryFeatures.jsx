@@ -8,7 +8,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import screenshotYoghurt from '@/images/screenshots/Yoghurt.gif'
 import screenshotIceCream from '@/images/screenshots/Ice-Cream.gif'
-import screenshotMilk from '@/images/screenshots/Milk'
+import screenshotMilk from '@/images/screenshots/Milk.gif'
 import screenshotDrinkingWater from '@/images/screenshots/Pure-Drinking-Water.gif'
 import screenshotCheese from '@/images/screenshots/Cheese.gif'
 import screenshotFruitJuice from '@/images/screenshots/Fruit-Juice.gif'
@@ -16,14 +16,11 @@ import screenshotFruitJuice from '@/images/screenshots/Fruit-Juice.gif'
 const features = [
   {
     name: 'Yoghurt',
-    summary: 'Enjoy our creamy, flavorful chilled yoghurts, supplied directly to ship vessels or through trusted ship chandlers.',
+    summary: 'Enjoy creamy chilled yoghurts, perfect for seafarers, delivered to your ship.',
     description:
-      `Indulge in the creamy, refreshing taste of our chilled yoghurts, specially 
-      supplied to ship vessels or through our trusted ship chandler partners. 
-      Crafted with the finest ingredients, our yoghurts offer a perfect balance of 
-      flavor and nutrition, ensuring a delightful blend of smooth texture and rich 
-      taste with every spoonful. Ideal for seafarers, our chilled yoghurts make for 
-      a nutritious and delicious snack, providing a moment of pure bliss during long voyages.`,
+      `Indulge in our creamy, refreshing chilled yoghurts, supplied directly to ship vessels 
+      or through our trusted ship chandler partners. Made with the finest ingredients, 
+      they offer a perfect balance of flavor and nutrition for seafarers.`,
     image: screenshotYoghurt,
     icon: function ReportingIcon() {
       let id = useId()
@@ -56,16 +53,11 @@ const features = [
   {
     name: 'Ice Cream',
     summary:
-      `Indulge in our premium in-house and select popular brand ice creams, 
-      delivered directly to ship vessels or through trusted ship chandlers. 
-      Rich, creamy, and made with the finest ingredients, it's the perfect treat for seafarers.`,
+      `Indulge in rich, premium ice cream onboard, available from top brands.`,
     description:
-      `Delight in the creamy, refreshing taste of our premium ice cream, available in 
-      both our in-house brand and select popular brands, delivered directly to ship vessels 
-      or through our trusted ship chandler partners. Made with the finest ingredients, 
-      our ice cream offers a perfect balance of rich flavor and smooth texture, providing 
-      a delectable treat for seafarers. Ideal for enjoying a moment of indulgence on long voyages, 
-      our ice cream brings a touch of sweetness and joy to life at sea.`,
+      `Savor the rich, creamy taste of our premium ice cream, available in both our in-house brand 
+      and popular brands. Delivered directly to ship vessels or through trusted ship chandler partners, 
+      it's a delightful treat for seafarers.`,
     image: screenshotIceCream,
     icon: function InventoryIcon() {
       return (
@@ -91,17 +83,87 @@ const features = [
   {
     name: 'Fresh & UHT Milk',
     summary:
-      `Experience the quality of our fresh and UHT milk, delivered directly 
-      to ship vessels or through trusted ship chandlers. 
-      Rich in flavor and nutrients, perfect for a healthy diet on board.`,
+      `Fresh and UHT milk for ship crews, ensuring nutrition on long voyages.`,
     description:
-      `Enjoy the pure, refreshing taste of our fresh and UHT milk, available for direct 
-      delivery to ship vessels or through our trusted ship chandler partners. Our fresh milk 
-      is sourced from top-quality dairy farms, ensuring rich flavor and high nutritional value. 
-      For longer shelf life without compromising taste, our UHT milk is the perfect alternative, 
-      offering convenience and durability for seafarers. Whether it's fresh or UHT, our milk provides 
-      the essential nutrients needed to maintain a healthy diet during long voyages.`,
-    image: screenshotContacts,
+      `Enjoy the pure taste of our fresh and UHT milk, supplied directly to ship vessels or through 
+      our trusted ship chandler partners. Our milk provides essential nutrients and is perfect 
+      for long voyages.`,
+    image: screenshotMilk,
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            fill="#fff"
+          />
+          <path
+            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Pure Drinking Water',
+    summary:
+      `Pure drinking water, delivered to ship vessels or through ship chandlers for essential hydration.`,
+    description:
+      `Stay hydrated with our pure drinking water, available for direct delivery to ship vessels or through 
+      trusted ship chandler partners. Our water is meticulously purified to ensure the highest quality and safety, 
+      providing essential hydration for seafarers during long voyages.`,
+    image: screenshotDrinkingWater,
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            fill="#fff"
+          />
+          <path
+            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Cheese',
+    summary:
+      `Premium cheese selection, delivered to ship vessels or through ship chandlers for delicious meals.`,
+    description:
+      `Experience the rich, savory taste of our premium cheese, supplied directly to ship vessels or 
+      through our reliable ship chandler partners. Our cheese selection includes various types, perfect 
+      for enhancing meals on board and providing a delicious source of nutrition for seafarers.`,
+    image: screenshotCheese,
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+            fill="#fff"
+          />
+          <path
+            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: 'Fruit Juice',
+    summary:
+      `Refreshing fruit juices, delivered to ship vessels or through ship chandlers for natural flavor and vitamins.`,
+    description:
+      `Savor the refreshing taste of our fruit juices, made from the finest fruits and supplied directly to ship vessels 
+      or through trusted ship chandler partners. Our juices provide a burst of natural flavor and essential vitamins, 
+      perfect for keeping seafarers refreshed and energized.`,
+    image: screenshotFruitJuice,
     icon: function ContactsIcon() {
       return (
         <>
@@ -123,7 +185,7 @@ const features = [
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(className, !isActive && 'opacity-50 hover:opacity-100')}
       {...props}
     >
       <div
@@ -139,7 +201,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-rose-600' : 'text-slate-600',
         )}
       >
         {feature.name}
@@ -198,25 +260,25 @@ function FeaturesDesktop() {
               />
             ))}
           </TabList>
-          <TabPanels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <TabPanels className="relative mt-4 overflow-hidden rounded-4xl bg-amber-800 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <TabPanel
                   static
                   key={feature.summary}
                   className={clsx(
-                    'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',
+                    'px-5 transition duration-1000 ease-in-out ui-not-focus-visible:outline-none',
                     featureIndex !== selectedIndex && 'opacity-60',
                   )}
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                  <div className="w-[32.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
                     <Image
-                      className="w-full"
+                      className=""
                       src={feature.image}
                       alt=""
-                      sizes="52.75rem"
+                      sizes="100rem"
                     />
                   </div>
                 </TabPanel>
