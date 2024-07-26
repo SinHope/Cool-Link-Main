@@ -24,7 +24,7 @@ export function CallToAction() {
             Get started today!
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It's time to get the best product and service. Engage us for seamless experience!
+            It&apos;s time to get the best product and service. Engage us for seamless experience!
           </p>
           <Button href="/register" color="white" className="mt-10">
             Get Your Quote Now
