@@ -11,7 +11,7 @@ import logoEss from '@/images/logos/ess-logo.png'
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-15 text-center lg:pt-12">
+    <Container className="mt-20 pb-16 pt-15 text-center lg:pt-12">
       <h1 className="mx-auto mt-px max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Chill Your Thirst, Chill Your Taste{' '}
         <span className="relative whitespace-nowrap text-blue-600">

@@ -72,7 +72,7 @@ function MobileNavigation() {
         <MobileNavLink href="#pricing">Investors Relations</MobileNavLink>
         <MobileNavLink href="#pricing">News</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
-        <MobileNavLink href="/login">Contact Us</MobileNavLink>
+        <MobileNavLink href="/Contact">Contact Us</MobileNavLink>
       </PopoverPanel>
     </Popover>
   )
@@ -98,7 +98,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button className="hover:bg-transparent ease-in-out duration-300" href="/register" color="blue">
+            <Button className="hover:bg-transparent ease-in-out duration-300" href="/Contact" color="blue">
               <span className="hover:text-blue-700">
                 Contact <span className="hidden lg:inline">Us</span>
               </span>
