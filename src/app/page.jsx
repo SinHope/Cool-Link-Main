@@ -7,6 +7,7 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
+import { BackToTopButton } from '@/components/BackToTopButton'
 
 export default function Home() {
   return (
@@ -18,8 +19,7 @@ export default function Home() {
         <SecondaryFeatures />
         <CallToAction />
         <Testimonials />
-        <Pricing />
-        <Faqs />
+        <BackToTopButton />
       </main>
       <Footer />
     </>

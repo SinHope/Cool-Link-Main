@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
+import { useState, useEffect } from 'react';
+
 import { Container } from '@/components/Container'
 import screenshotYoghurt from '@/images/screenshots/Yoghurt.gif'
 import screenshotIceCream from '@/images/screenshots/Ice-Cream.gif'
@@ -182,6 +184,8 @@ const features = [
   },
 ]
 
+
+
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
@@ -238,6 +242,17 @@ function FeaturesMobile() {
 }
 
 function FeaturesDesktop() {
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedIndex((prevIndex) => (prevIndex + 1) % features.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <TabGroup className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (

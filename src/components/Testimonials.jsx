@@ -1,29 +1,31 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
+import avatarImage1 from '@/images/Captain-Asep-Dadang-Kurniawan.jpg'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
+import avatarImage3 from '@/images/romel-pineda.jpg'
 import avatarImage4 from '@/images/avatars/avatar-4.png'
 import avatarImage5 from '@/images/avatars/avatar-5.png'
+
+import { Resume } from '@/components/documents'
 
 const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
-      author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        `This supplier's chilled yoghurts are so good, I sometimes wonder if they're really that nutritious. Either way, I'm hooked!`,
+        author: {
+        name: 'Captain Asep Dadang Kurniawan',
+        role: 'Captain On LNG Vessel - LNG IRIS',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        `I had a small issue with my order, but customer support was incredibly quick to resolve it. The crew was happy to get their ice cream in no time!`,
+        author: {
+        name: 'Chief Cook Amy Hahn',
+        role: 'Chief Cook Of Car Carrier M/V Themis',
         image: avatarImage4,
       },
     },
@@ -31,19 +33,19 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
-      author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        `The best part about this supplier is that our budget for onboard supplies hasn't increased, even though we're ordering more cheese than ever. Can't wait to see how the crew enjoys it!`,
+        author: {
+        name: 'Lolo Khien',
+        role: 'Purchasing Manager Sevenseas Singapore',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
-      author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
+        `There are so many things I used to worry about with other suppliers, but with this one, everything just seems smoother. It feels almost too easy, but I'm not complaining`,
+        author: {
+        name: 'Dave Powlowski',
+        role: 'Procurement Executive Mashin Shokai',
         image: avatarImage2,
       },
     },
@@ -51,19 +53,19 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-      author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        `I used to stress about running out of fresh milk, but with this supplier, we always have enough. It's almost like they know exactly what we need and when we need it.`,
+        author: {
+        name: 'Captain Romel Pineda',
+        role: 'Captain Of Bulk Carrier Vessel - Orient Violet',
         image: avatarImage3,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        'Customer support handled our urgent order perfectly. We needed more ice cream on short notice, and they delivered promptly, keeping the crew happy!',
       author: {
         name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        role: 'Customer Service Manager Francois Marine',
         image: avatarImage4,
       },
     },
@@ -93,6 +95,10 @@ export function Testimonials() {
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Get all the the announcements, Financial Reports and Prospectus dopcuments here!
           </p>
+          <Resume
+                invert
+                className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
+              />
         </div>
         <ul
           role="list"
