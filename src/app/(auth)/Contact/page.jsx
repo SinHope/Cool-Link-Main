@@ -8,7 +8,7 @@ import { SlimLayout } from '@/components/SlimLayout'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 
 export const metadata = {
-  title: 'Sign Up',
+  title: 'Contact',
 }
 
 export default function Register() {
@@ -36,6 +36,8 @@ export default function Register() {
         action="#"
         className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
       >
+        <p>Otherwise, please use below email service</p>
+        <br></br>
         <TextField
           label="First name"
           name="first_name"
@@ -60,26 +62,39 @@ export default function Register() {
         />
         <TextField
           className="col-span-full"
-          label="Password"
-          name="password"
-          type="password"
-          autoComplete="new-password"
+          label="Company Name"
+          name="company_name"
+          type="text"
+          autoComplete="company"
           required
         />
         <SelectField
           className="col-span-full"
-          label="How did you hear about us?"
+          label="Purpose Of Your Message"
           name="referral_source"
         >
-          <option>AltaVista search</option>
-          <option>Super Bowl commercial</option>
-          <option>Our route 34 city bus ad</option>
-          <option>The “Never Use This” podcast</option>
+          <option>Quote Enquiry</option>
+          <option>Feedback</option>
+          <option>Commercial Relations</option>
+          <option>Customer Service(order/aftersales)</option>
         </SelectField>
+        <div className="col-span-full">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            Your Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+            placeholder="Type your message here..."
+            required
+          />
+        </div>
         <div className="col-span-full">
           <Button type="submit" variant="solid" color="blue" className="w-full">
             <span>
-              Sign up <span aria-hidden="true">&rarr;</span>
+              Send Message <span aria-hidden="true">&rarr;</span>
             </span>
           </Button>
         </div>

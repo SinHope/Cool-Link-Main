@@ -6,7 +6,7 @@ import Image from 'next/image';
 import wsicon from '@/images/logos/whatsappicon.png'
 
 export function WhatsAppButton() {
-  const phoneNumber = '1234567890'; // Replace with your WhatsApp number
+  const phoneNumber = '6586844625'; // Replace with your WhatsApp number
   const message = 'Hello! I would like to know more about your services.'; // Default message
 
   const handleClick = () => {
@@ -19,22 +19,8 @@ export function WhatsAppButton() {
   };
 
   return (
-    <button
-      onClick={handleClick}
-      className="whatsapp-button"
-      style={{
-        backgroundColor: 'transparent',
-        color: 'white',
-        border: 'none',
-        borderRadius: '5px',
-        padding: '10px 20px',
-        display: 'flex',
-        alignItems: 'center',
-        cursor: 'pointer',
-      }}
-    >
-      {/* Replace this with your WhatsApp icon image */}
-      <Image src={wsicon} alt="WhatsApp" width={48} height={48} />
-    </button>
+      <div onClick={handleClick} style={{ cursor: 'pointer' }}>
+        <Image src={wsicon} alt="WhatsApp Icon" width={300} height={300} className="hover:scale-110 duration-300"/>
+      </div>
   );
 }
