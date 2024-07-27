@@ -1,3 +1,7 @@
+'use client'
+
+import React, { useState } from 'react';
+
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
@@ -7,11 +11,45 @@ import { SlimLayout } from '@/components/SlimLayout'
 
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 
-export const metadata = {
-  title: 'Contact',
-}
 
 export default function Register() {
+
+  const [formData, setFormData] = useState({
+    first_name: '',
+    last_name: '',
+    email: '',
+    company_name: '',
+    purpose: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        alert('Message sent successfully!');
+      } else {
+        alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again later.');
+    }
+  };
+
   return (
     <SlimLayout>
       <div className="flex">
@@ -71,7 +109,7 @@ export default function Register() {
         <SelectField
           className="col-span-full"
           label="Purpose Of Your Message"
-          name="referral_source"
+          name="purpose"
         >
           <option>Quote Enquiry</option>
           <option>Feedback</option>
